@@ -20,5 +20,7 @@ alias ls='ls -G'
 # Adding PATH for personal scripts
 export PATH="$HOME/bin:$PATH"
 
-# Opt out of Homebrew analytics
-export HOMEBREW_NO_ANALYTICS=1
+# Exports
+export HOMEBREW_NO_ANALYTICS=1              # Opt out of Homebrew analytics
+export BASH_SILENCE_DEPRECATION_WARNING=1   # Hide "default interactive shell is now zsh" warning on macOS
+export EDITOR='vim'
