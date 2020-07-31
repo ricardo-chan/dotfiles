@@ -34,7 +34,7 @@ call plug#end()
 
 " Key remaps
 let mapleader=" "
-let g:user_emmet_leader_key='<A-c>'   " emmet is now ALT+C
+let g:user_emmet_leader_key=','   " emmet is now ,
 
     " Split file navigation
     map <C-h> <C-w>h
