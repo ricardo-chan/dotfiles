@@ -13,6 +13,8 @@ set expandtab       " use spaces instead of tabs
 set smarttab        " use tabs at the start of a line, spaces elsewhere
 set nowrap          " don't wrap text
 set incsearch       " search without pressing enter
+set colorcolumn=120 " character column limit
+highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 " Installing vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
