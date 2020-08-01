@@ -15,7 +15,9 @@ files=".bash_profile .gitconfig git-completion.bash git-prompt.sh" # list of fil
 
 # Create dotfiles_old directory for backup in $HOME
 echo -n "Creating $backupdir for backup of any existing files in $HOME..."
+[ -d $backupdir ] && rm -rf $backupdir
 mkdir -p $backupdir
+mkdir -p $backupdir/.config
 echo "...done"
 
 
@@ -35,13 +37,13 @@ done
 # Create .config directory if it doesn't exist
 [ ! -d $HOME/.config ] && mkdir $HOME/.config
 
-# Move existing files in $HOME/.config to backup directory
+# Move existing files in $HOME/.config/nvim to backup directory
 echo "Moving existing .config files to $backupdir"
-mv $HOME/.config $backupdir/
+[ -d $HOME/.config/nvim ] && mv $HOME/.config/nvim $backupdir/.config/
 
 # Create symlink for config files
-echo "Creating symlink to .config in home directory"
-ln -sf $dir/config $HOME/.config
+echo "Creating symlink to .config/nvim in home directory"
+ln -sf $dir/config/nvim $HOME/.config/nvim
 
 echo "Done!"
 echo "Feel free to remove the dotfiles_old directory if you're sure you don't need it"
