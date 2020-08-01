@@ -15,14 +15,10 @@ set nowrap                  " don't wrap text
 set incsearch               " search without pressing enter
 set colorcolumn=120         " character column limit
 set splitbelow splitright   " splits open below and to the right while using sp and vsp
+set clipboard+=unnamedplus  " use system clipboard
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
-" Installing vim-plug
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
+autocmd FileType tex,latex,markdown,md setlocal spell spelllang=en_us
 
 " Installing plugins
 call plug#begin('~/.vim/plugged')

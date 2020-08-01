@@ -6,6 +6,7 @@
 
 # Install brew packages
 brew install tree
+brew install neovim
 
 # Install MacOS Applications
 brew cask install brave-browser
