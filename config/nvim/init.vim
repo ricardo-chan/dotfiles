@@ -1,10 +1,25 @@
+" Installing plugins
+call plug#begin('~/.vim/plugged')
+
+    " Web dev plugins
+    Plug 'mattn/emmet-vim'   " emmet vim
+    Plug 'ap/vim-css-color'  " Color preview for css files
+
+    " status bar
+    Plug 'vim-airline/vim-airline'
+
+    " VS Code-like theme
+    Plug 'tomasiser/vim-code-dark'
+
+call plug#end()
+
 " General settings
     set langmenu=en_US          " sets the language of the menu to english
     language en_US              " set UI language to english
     set nocompatible            " get rid of Vi compatibility mode
     set number relativenumber   " show line numbers
     syntax enable               " enably syntax highlighting
-    colorscheme desert          " set colorscheme
+    colorscheme codedark          " set colorscheme
     set ignorecase              " make searches case-insensitive
     set ruler                   " always show info along bottom
     set autoindent              " auto-indent
@@ -19,20 +34,11 @@
     set colorcolumn=120         " character column limit
     set splitbelow splitright   " splits open below and to the right while using sp and vsp
     set clipboard+=unnamedplus  " use system clipboard
+    set cursorline
     highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 autocmd FileType tex,latex,markdown,md setlocal spell spelllang=en_us
 
-" Installing plugins
-call plug#begin('~/.vim/plugged')
-
-    " emmet vim
-    Plug 'mattn/emmet-vim'
-
-    " status bar
-    Plug 'vim-airline/vim-airline'
-
-call plug#end()
 
 " Key remaps
     let mapleader=" "
