@@ -15,7 +15,10 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # '\W' adds the name of the current directory
 export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 
+# Aliases
 alias ls='ls -G'
+alias v='nvim'
+alias vim='nvim'
 
 # PATH exports
 # Adding PATH for personal scripts
