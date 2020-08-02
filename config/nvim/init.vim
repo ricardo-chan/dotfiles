@@ -5,12 +5,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'mattn/emmet-vim'   " emmet vim
     Plug 'ap/vim-css-color'  " Color preview for css files
 
-    " status bar
-    Plug 'vim-airline/vim-airline'
-
-    " VS Code-like theme
-    Plug 'tomasiser/vim-code-dark'
-
+    " Display features
+    Plug 'vim-airline/vim-airline'      " status bar
+    Plug 'tomasiser/vim-code-dark'      " VS Code-like theme
+    Plug 'airblade/vim-gitgutter'       " see file changes in gutter
 call plug#end()
 
 " General settings
