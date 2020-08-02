@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
     " Web dev plugins
     Plug 'mattn/emmet-vim'   " emmet vim
     Plug 'ap/vim-css-color'  " Color preview for css files
+    Plug 'alvan/vim-closetag' " automatically close tags ex. <html></html>
 
     " Display features
     Plug 'vim-airline/vim-airline'      " status bar
@@ -45,11 +46,12 @@ call plug#end()
     set colorcolumn=120         " character column limit
     set splitbelow splitright   " splits open below and to the right while using sp and vsp
     set clipboard+=unnamedplus  " use system clipboard
-    set cursorline
+    set cursorline              " highlight current line
+    set wildmode=longest,list,full  " autocompletion
     highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 autocmd FileType tex,latex,markdown,md setlocal spell spelllang=en_us
-
+autocmd InsertEnter * norm zz
 
 " Key remaps
     let mapleader=" "
@@ -61,7 +63,52 @@ autocmd FileType tex,latex,markdown,md setlocal spell spelllang=en_us
     map <C-k> <C-w>k
     map <C-l> <C-w>l
 
+    " CoC bindings
+    " GoTo code navigation.
+    nmap <silent> gd <Plug>(coc-definition)
+    nmap <silent> gy <Plug>(coc-type-definition)
+    nmap <silent> gi <Plug>(coc-implementation)
+    nmap <silent> gr <Plug>(coc-references)
+    " Use <c-space> to trigger completion.
+    inoremap <silent><expr> <c-space> coc#refresh()
+    " Use K to show documentation in preview window.
+    nnoremap <silent> K :call <SID>show_documentation()<CR>
+    function! s:show_documentation()
+        if (index(['vim','help'], &filetype) >= 0)
+          execute 'h '.expand('<cword>')
+        else
+          call CocAction('doHover')
+        endif
+    endfunction
+
 " Git Gutter
 highlight GitGutterAdd guifg=#009900 ctermfg=Green
 highlight GitGutterChange guifg=#bbbb00 ctermfg=Yellow
 highlight GitGutterDelete guifg=#ff2222 ctermfg=Red
+
+
+" Vim autoclose tag
+" Active only for filenames like .xml, .html, .xhtml
+let g:closetag_filenames = '*.html,*.xhtml,*.jsx,*.js,*.tsx'
+
+" filenames like *.xml, *.xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+let g:closetag_xhtml_filenames = '*.xml,*.xhtml,*.jsx,*.js,*.tsx'
+
+" filetypes like xml, html, xhtml, ...
+" These are the file types where this plugin is enabled.
+let g:closetag_filetypes = 'html,xhtml,jsx,js,tsx'
+
+" filetypes like xml, xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+let g:closetag_xhtml_filetypes = 'xml,xhtml,jsx,js,tsx'
+
+" Add > at current position without closing the current tag, default is ''
+let g:closetag_close_shortcut = '<leader>>'
+
+" Coc settings (as per README)
+set nobackup
+set nowritebackup
+set updatetime=300
+set shortmess+=c
+set signcolumn=yes
