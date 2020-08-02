@@ -17,8 +17,11 @@ export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 
 alias ls='ls -G'
 
+# PATH exports
 # Adding PATH for personal scripts
 export PATH="$HOME/bin:$PATH"
+# Add PATH for homebrew
+export PATH="/usr/local/sbin:$PATH"
 
 # Exports
 export HOMEBREW_NO_ANALYTICS=1              # Opt out of Homebrew analytics

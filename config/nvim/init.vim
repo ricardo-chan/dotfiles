@@ -9,6 +9,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'      " status bar
     Plug 'tomasiser/vim-code-dark'      " VS Code-like theme
     Plug 'airblade/vim-gitgutter'       " see file changes in gutter
+
+    " Tools
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
 
 " General settings
