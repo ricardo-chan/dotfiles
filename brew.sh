@@ -1,4 +1,4 @@
-#!/bin/bash
+g!/bin/bash
 
 ####### brew.sh #######
 # This script will install my existing brew packages
@@ -7,6 +7,7 @@
 # Install brew packages
 brew install tree
 brew install neovim
+brew install lf
 
 # Install MacOS Applications
 brew cask install brave-browser
