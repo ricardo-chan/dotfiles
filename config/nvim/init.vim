@@ -112,3 +112,8 @@ set nowritebackup
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
+let g:coc_global_extensions = [
+   \ 'coc-pairs',
+   \ 'coc-html',
+   \ 'coc-css'
+   \ ]
