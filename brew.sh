@@ -8,6 +8,8 @@ g!/bin/bash
 brew install tree
 brew install neovim
 brew install lf
+brew install node
+brew install shellcheck
 
 # Install MacOS Applications
 brew cask install brave-browser
