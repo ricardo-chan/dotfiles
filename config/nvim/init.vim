@@ -19,6 +19,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'      " status bar
     Plug 'tomasiser/vim-code-dark'      " VS Code-like theme
     Plug 'airblade/vim-gitgutter'       " see file changes in gutter
+    Plug 'preservim/nerdtree'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
 
     " Tools
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -117,3 +119,8 @@ let g:coc_global_extensions = [
    \ 'coc-html',
    \ 'coc-css'
    \ ]
+
+" Nerdtree settings
+map <leader>n :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd VimEnter * NERDTree
