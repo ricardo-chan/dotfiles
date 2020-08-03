@@ -39,8 +39,9 @@ call plug#end()
     language en_US              " set UI language to english
     set nocompatible            " get rid of Vi compatibility mode
     set number relativenumber   " show line numbers
-    syntax enable               " enably syntax highlighting
-    colorscheme codedark          " set colorscheme
+    syntax enable               " enable syntax highlighting
+    filetype plugin on          " for vimwiki
+    colorscheme codedark        " set colorscheme
     set ignorecase              " make searches case-insensitive
     set ruler                   " always show info along bottom
     set autoindent              " auto-indent
