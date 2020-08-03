@@ -11,10 +11,11 @@
 call plug#begin('~/.vim/plugged')
 
     " Web dev plugins
-    Plug 'mattn/emmet-vim'   " emmet vim
-    Plug 'ap/vim-css-color'  " Color preview for css files
-    Plug 'alvan/vim-closetag' " automatically close tags ex. <html></html>
-
+    Plug 'mattn/emmet-vim'      " emmet vim
+    Plug 'ap/vim-css-color'     " Color preview for css files
+    Plug 'alvan/vim-closetag'   " automatically close tags ex. <html></html>
+    Plug 'tpope/vim-surround'   " surround stuff faster
+        
     " Display features
     Plug 'vim-airline/vim-airline'      " status bar
     Plug 'tomasiser/vim-code-dark'      " VS Code-like theme
