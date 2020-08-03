@@ -16,6 +16,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'alvan/vim-closetag'   " automatically close tags ex. <html></html>
     Plug 'tpope/vim-surround'   " surround stuff faster
         
+    " Commentary
+    Plug 'tpope/vim-commentary'
+
+    " vimwiki
+    Plug 'vimwiki/vimwiki'
+
     " Display features
     Plug 'vim-airline/vim-airline'      " status bar
     Plug 'tomasiser/vim-code-dark'      " VS Code-like theme
