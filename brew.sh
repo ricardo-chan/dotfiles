@@ -10,6 +10,7 @@ brew install neovim
 brew install lf
 brew install node
 brew install shellcheck
+brew install neofetch
 
 # Install MacOS Applications
 brew cask install brave-browser
