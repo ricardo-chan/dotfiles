@@ -1,4 +1,5 @@
 # Setting up bash prompt
+neofetch # Showing system info
 
 # Enable tab completion
 source ~/git-completion.bash
