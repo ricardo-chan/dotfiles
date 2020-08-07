@@ -32,6 +32,7 @@ call plug#begin('~/.vim/plugged')
     " Tools
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -156,3 +157,7 @@ let g:coc_global_extensions = [
 map <leader>n :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 autocmd VimEnter * NERDTree
+
+" fzf.vim settings
+" Always enable preview window on the right with 60% width
+let g:fzf_preview_window = 'right:60%'
