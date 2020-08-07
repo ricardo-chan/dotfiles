@@ -11,6 +11,8 @@ brew install lf
 brew install node
 brew install shellcheck
 brew install neofetch
+brew install fzf
+brew install cointop
 
 # Install MacOS Applications
 brew cask install brave-browser

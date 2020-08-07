@@ -10,7 +10,7 @@
 dir=$HOME/dotfiles             # dotfiles directory
 backupdir=$HOME/dotfiles_old   # where existing dotfiles will be placed
 files=".bash_profile .gitconfig git-completion.bash git-prompt.sh" # list of files to symlink in $HOME
-
+cfolders="nvim neofetch cointop alacritty"
 ##########
 
 # Create dotfiles_old directory for backup in $HOME
@@ -32,18 +32,27 @@ for file in $files; do
     mv $HOME/$file $backupdir/
     echo "Creating symlink to $file in home directory"
     ln -sf $dir/$file $HOME/$file
+    echo "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 done
+
+echo "================================================================================"
 
 # Create .config directory if it doesn't exist
 [ ! -d $HOME/.config ] && mkdir $HOME/.config
 
-# Move existing files in $HOME/.config/nvim to backup directory
-echo "Moving existing .config files to $backupdir"
-[ -d $HOME/.config/nvim ] && mv $HOME/.config/nvim $backupdir/.config/
+for cfolder in $cfolders; do
+    # Move existing files in $HOME/.config/$cfolder to backup directory
+    echo "Moving existing .config/$cfolder files to $backupdir"
+    [ -d $HOME/.config/$cfolder ] && mv $HOME/.config/$cfolder $backupdir/.config/
 
-# Create symlink for config files
-echo "Creating symlink to .config/nvim in home directory"
-ln -sf $dir/config/nvim $HOME/.config/nvim
+    # Create symlink for config files
+    echo "Creating symlink to .config/$cfolder in home directory"
+    ln -sf $dir/config/$cfolder $HOME/.config/$cfolder
+
+    echo "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+done
+
+echo "================================================================================"
 
 echo "Done!"
 echo "Feel free to remove the dotfiles_old directory if you're sure you don't need it"
