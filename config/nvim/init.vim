@@ -161,3 +161,6 @@ autocmd VimEnter * NERDTree
 " fzf.vim settings
 " Always enable preview window on the right with 60% width
 let g:fzf_preview_window = 'right:60%'
+
+command! -bang -nargs=? -complete=dir Files
+    \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)

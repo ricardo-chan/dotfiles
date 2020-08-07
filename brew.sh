@@ -1,4 +1,4 @@
-g!/bin/bash
+#!/bin/bash
 
 ####### brew.sh #######
 # This script will install my existing brew packages
@@ -13,6 +13,7 @@ brew install shellcheck
 brew install neofetch
 brew install fzf
 brew install cointop
+brew install bat
 
 # Install MacOS Applications
 brew cask install brave-browser
