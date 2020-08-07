@@ -83,6 +83,8 @@ refresh_rate = 60
   names = ["Basic Attention Token", "LBRY Credits", "Bitcoin", "Ethereum", "XRP"]
 
 [portfolio]
+  "Basic Attention Token" = 4.7
+  "LBRY Credits" = 61.64
 
 [coinmarketcap]
   pro_api_key = ""
