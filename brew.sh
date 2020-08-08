@@ -17,6 +17,7 @@ brew install bat
 
 # Install MacOS Applications
 brew cask install brave-browser
+brew cask install tiles
 brew cask install virtualbox
 brew cask install spotify
 brew cask install vlc
