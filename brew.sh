@@ -20,3 +20,7 @@ brew cask install brave-browser
 brew cask install virtualbox
 brew cask install spotify
 brew cask install vlc
+
+# Installing inconsolata font
+brew tap homebrew/cask-fonts
+brew cask install font-inconsolata-lgc-nerd-font
