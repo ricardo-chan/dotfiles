@@ -80,11 +80,11 @@ refresh_rate = 60
   "}" = "last_chart_range"
 
 [favorites]
-  names = ["Basic Attention Token", "LBRY Credits", "Bitcoin", "Ethereum", "XRP"]
+  names = ["LBRY Credits", "Bitcoin", "Ethereum", "XRP", "Basic Attention Token"]
 
 [portfolio]
   "Basic Attention Token" = 4.7
-  "LBRY Credits" = 61.64
+  "LBRY Credits" = 64.64
 
 [coinmarketcap]
   pro_api_key = ""
