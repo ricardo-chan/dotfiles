@@ -1,6 +1,7 @@
-# Setting up bash prompt
 neofetch # Showing system info
+set -o vi
 
+# Setting up bash prompt
 # Enable tab completion
 source ~/git-completion.bash
 # colors!
