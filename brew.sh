@@ -14,6 +14,7 @@ brew install neofetch
 brew install fzf
 brew install cointop
 brew install bat
+brew install newsboat
 
 # Install MacOS Applications
 brew cask install brave-browser

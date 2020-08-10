@@ -9,8 +9,8 @@
 
 dir=$HOME/dotfiles             # dotfiles directory
 backupdir=$HOME/dotfiles_old   # where existing dotfiles will be placed
-files=".bash_profile .gitconfig git-completion.bash git-prompt.sh" # list of files to symlink in $HOME
-cfolders="nvim neofetch cointop alacritty"
+files=".bash_profile .gitconfig git-completion.bash git-prompt.sh"  # list of files to symlink in $HOME
+cfolders="nvim neofetch cointop alacritty newsboat"                 # list of config folders to symnling
 ##########
 
 # Create dotfiles_old directory for backup in $HOME
