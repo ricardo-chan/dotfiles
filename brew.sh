@@ -15,6 +15,8 @@ brew install fzf
 brew install cointop
 brew install bat
 brew install newsboat
+brew install bash
+brew install transmission-cli
 
 # Install MacOS Applications
 brew cask install brave-browser
