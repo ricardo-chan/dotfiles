@@ -11,6 +11,8 @@ refresh_rate = 60
   1 = "sort_column_1h_change"
   2 = "sort_column_24h_change"
   7 = "sort_column_7d_change"
+  "<" = "previous_page"
+  ">" = "next_page"
   "?" = "help"
   C = "show_currency_convert_menu"
   E = "show_portfolio_edit_menu"
@@ -80,7 +82,7 @@ refresh_rate = 60
   "}" = "last_chart_range"
 
 [favorites]
-  names = ["LBRY Credits", "Bitcoin", "Ethereum", "XRP", "Basic Attention Token"]
+  names = ["ChainLink", "LBRY Credits", "Bitcoin", "Ethereum", "XRP", "Basic Attention Token"]
 
 [portfolio]
   "Basic Attention Token" = 4.7
