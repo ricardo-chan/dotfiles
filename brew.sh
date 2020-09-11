@@ -17,6 +17,7 @@ brew install bat
 brew install newsboat
 brew install bash
 brew install transmission-cli
+brew install mpv
 
 # Install MacOS Applications
 brew cask install brave-browser
@@ -24,6 +25,7 @@ brew cask install tiles
 brew cask install virtualbox
 brew cask install spotify
 brew cask install vlc
+brew cask install microsoft-teams
 
 # Installing inconsolata font
 brew tap homebrew/cask-fonts
