@@ -26,6 +26,7 @@ brew cask install virtualbox
 brew cask install spotify
 brew cask install vlc
 brew cask install microsoft-teams
+brew cask install microsoft-word
 
 # Installing inconsolata font
 brew tap homebrew/cask-fonts
