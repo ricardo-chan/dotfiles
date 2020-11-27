@@ -29,6 +29,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdtree'
     Plug 'Xuyuanp/nerdtree-git-plugin'
 
+    " LaTeX
+    Plug 'lervag/vimtex'
+
     " Tools
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -150,8 +153,12 @@ set signcolumn=yes
 let g:coc_global_extensions = [
    \ 'coc-pairs',
    \ 'coc-html',
-   \ 'coc-css'
+   \ 'coc-css',
+   \ 'coc-vimtex'
    \ ]
+
+" Vimtex settings
+let g:vimtex_view_method = 'skim'
 
 " Nerdtree settings
 map <leader>n :NERDTreeToggle<CR>

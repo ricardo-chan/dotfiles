@@ -27,6 +27,7 @@ brew cask install spotify
 brew cask install vlc
 brew cask install microsoft-teams
 brew cask install microsoft-word
+brew install --cask skim
 
 # Installing inconsolata font
 brew tap homebrew/cask-fonts
