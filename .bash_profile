@@ -21,6 +21,7 @@ export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 alias ls='ls -G'
 alias v='nvim'
 alias vim='nvim'
+alias cdcloud='cd /Users/CAPR/Library/Mobile\ Documents/com~apple~CloudDocs/'
 
 # PATH exports
 # Adding PATH for personal scripts
