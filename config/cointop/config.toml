@@ -3,9 +3,11 @@ default_view = "favorites"
 api = "coingecko"
 colorscheme = "cointop"
 refresh_rate = 60
+cache_dir = "/tmp"
 
 [shortcuts]
   "$" = "last_page"
+  "%" = "sort_column_percent_holdings"
   "/" = "open_search"
   0 = "first_page"
   1 = "sort_column_1h_change"
@@ -82,7 +84,7 @@ refresh_rate = 60
   "}" = "last_chart_range"
 
 [favorites]
-  names = ["ChainLink", "LBRY Credits", "Bitcoin", "Ethereum", "XRP", "Basic Attention Token"]
+  names = ["Bitcoin", "Ethereum", "XRP", "Basic Attention Token", "ChainLink", "LBRY Credits"]
 
 [portfolio]
   "Basic Attention Token" = 4.7
