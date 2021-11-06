@@ -22,6 +22,7 @@ alias ls='ls -G'
 alias v='nvim'
 alias vim='nvim'
 alias cdcloud='cd /Users/CAPR/Library/Mobile\ Documents/com~apple~CloudDocs/'
+alias cdbme="cd '/Users/CAPR/OneDrive - Budapesti Műszaki és Gazdaságtudományi Egyetem'"
 
 # PATH exports
 # Adding PATH for personal scripts
