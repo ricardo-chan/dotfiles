@@ -18,6 +18,7 @@ brew install newsboat
 brew install bash
 brew install transmission-cli
 brew install mpv
+brew install ccls
 
 # Install MacOS Applications
 brew cask install brave-browser

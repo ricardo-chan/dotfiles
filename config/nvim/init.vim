@@ -15,7 +15,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'ap/vim-css-color'     " Color preview for css files
     Plug 'alvan/vim-closetag'   " automatically close tags ex. <html></html>
     Plug 'tpope/vim-surround'   " surround stuff faster
-        
+
     " Commentary
     Plug 'tpope/vim-commentary'
 
